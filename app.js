@@ -1,12 +1,13 @@
-var heading =document.getElementById("heading")
-var body=document.querySelector('body')
+var list =document.querySelector('ul')
+arr.push['hgj']
 
+var arr=["balu","abhi"]
 
-heading.innerHTML="i was headig by js"
-heading.style="color:red;font-size:2rem"
+for (var i=0;i<arr.length;i++)
+{
 
-heading.classList.add('five')
-console.log(heading.classList)
-body.classList.add('dark')
-
-
+ var element = document.createElement('li')
+ var textnode = document.createTextNode(arr[i])
+ element.appendChild(textnode)
+list.appendChild(element)
+}
