@@ -1,8 +1,12 @@
 var heading =document.getElementById("heading")
-var para= document.getElementsByClassName('para')
-var tags=document.getElementsByTagName('a')
-var query=document.querySelectorAll('.para')
-console.log(query)
+var body=document.querySelector('body')
 
+
+heading.innerHTML="i was headig by js"
+heading.style="color:red;font-size:2rem"
+
+heading.classList.add('five')
+console.log(heading.classList)
+body.classList.add('dark')
 
 
