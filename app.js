@@ -1,13 +1,20 @@
-// call back functions
-var arr= ["balu", "abhi","aishu"]
-// for(var i=0;i<arr.length;i++)
-// console.log(arr[i])
- 
-// var balu =(element)=>{
-//   console.log(element)
-// }
-// arr.forEach(balu)
+var button=document.querySelector('button')
+var input= document.querySelector("input")
+var list =document.querySelector('ul')
+  
 
-arr.forEach( (element)=>{
-  console.log(element)
-})
+// const callback = ()=>{
+//   console.log("sdf")
+// }
+// button.addEventListener("click",callback)
+// or
+
+const callback=(event)=>{
+  console.log(input.value)
+  const inputvalue=input.value
+  const element =document.createElement("li")
+  const textnode =document.createTextNode(inputvalue)
+  element.appendChild(textnode)
+  list.appendChild(element)
+}
+button.addEventListener("click",callback)
