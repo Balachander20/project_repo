@@ -1,21 +1,8 @@
-// function keyword
-console.log(add(10,20))
+// short hand function
+var add=(a=0,b=0)=>a+b
+console.log(10,20)
+ 
+// 
+const greet=name=>"hi"+name
+console.log("hi prabakaram")
 
-function add(a=0,b=0){
-  var sum=a+b
-  return sum
-}
-
-// function expression
-var add=function(a=0,b=0){
-  var sum=a+b
-  return sum
-}
-console.log(add(10,20))
-
-// arrow function
-var add= (a=0,b=0)=>{
-  var sum=a+b
-  return sum
-}
-console.log(add(10,20))
