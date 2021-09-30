@@ -1,8 +1,13 @@
-// short hand function
-var add=(a=0,b=0)=>a+b
-console.log(10,20)
+// call back functions
+var arr= ["balu", "abhi","aishu"]
+// for(var i=0;i<arr.length;i++)
+// console.log(arr[i])
  
-// 
-const greet=name=>"hi"+name
-console.log("hi prabakaram")
+// var balu =(element)=>{
+//   console.log(element)
+// }
+// arr.forEach(balu)
 
+arr.forEach( (element)=>{
+  console.log(element)
+})
