@@ -1,20 +1,19 @@
-var button=document.querySelector('button')
-var input= document.querySelector("input")
-var list =document.querySelector('ul')
-  
-
-// const callback = ()=>{
-//   console.log("sdf")
-// }
-// button.addEventListener("click",callback)
-// or
-
-const callback=(event)=>{
-  console.log(input.value)
-  const inputvalue=input.value
-  const element =document.createElement("li")
-  const textnode =document.createTextNode(inputvalue)
-  element.appendChild(textnode)
-  list.appendChild(element)
+let car ={
+  name:"balu",
+  manufacter:"abhi",
+  print:function()  {
+    let manufacter="bmw"
+    console.log( manufacter)
+    console.log(this)
+    console.log(`${this.name} was created by ${this.manufacter}`)
+   
+  }
 }
-button.addEventListener("click",callback)
+
+console.log(car)
+console.log(typeof(car))
+console.log(car.name)
+console.log(car.manufacter)
+
+car.print()
+
